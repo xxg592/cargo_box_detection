@@ -13,3 +13,6 @@ results/*.log
 # editor / OS noise
 .vscode/
 .DS_Store
+
+# editor backups
+*.bak
