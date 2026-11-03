@@ -1,0 +1,71 @@
+{
+  "image_path": "images/test_boxes.png",
+  "image_source": "images/test_boxes.png",
+  "image_width": 1280,
+  "image_height": 720,
+  "coordinate_frame": "image_pixels",
+  "status": "DETECTED",
+  "detected_count": 3,
+  "color_status": {
+    "RED": true,
+    "GREEN": true,
+    "BLUE": true,
+    "YELLOW": false
+  },
+  "detections": [
+    {
+      "color": "RED",
+      "center": [
+        240,
+        350
+      ],
+      "size": [
+        235,
+        335
+      ],
+      "bbox": [
+        123,
+        183,
+        235,
+        335
+      ],
+      "area": 78156.0
+    },
+    {
+      "color": "GREEN",
+      "center": [
+        580,
+        350
+      ],
+      "size": [
+        235,
+        335
+      ],
+      "bbox": [
+        463,
+        183,
+        235,
+        335
+      ],
+      "area": 78156.0
+    },
+    {
+      "color": "BLUE",
+      "center": [
+        920,
+        350
+      ],
+      "size": [
+        235,
+        335
+      ],
+      "bbox": [
+        803,
+        183,
+        235,
+        335
+      ],
+      "area": 78156.0
+    }
+  ]
+}
