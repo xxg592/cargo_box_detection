@@ -231,7 +231,7 @@ Measured with the detector as committed (commands in section 6).
 | `images/test_boxes.png` (synthetic) | RED, GREEN, BLUE | 3/3 detected | 235x335 px each |
 | `images/test_empty.png` (synthetic, empty floor) | none | 0 detections | negative control, no false positive |
 | `images/gazebo_yellow_view.png` (live Gazebo frame) | YELLOW + GREEN | 2/2 detected | YELLOW bbox 450x383 px at ~1.1 m, GREEN 89x188 px at ~2.9 m |
-| `cargo_camera_after_turn.png` (live Gazebo frame) | RED + BLUE | 2/2 detected | RED 138x119 px, BLUE 160x140 px |
+| `images/cargo_red_blue_view.png` (live Gazebo frame) | RED + BLUE | 2/2 detected | RED 119x120 px at ~3.6 m, BLUE 224x233 px at ~2.1 m, both fully inside the frame |
 | `cargo_camera_original.png` (live Gazebo frame) | none in view | 0 detections | robot facing the empty side — no false positive |
 
 Annotated images: `results/*_detected.png`.

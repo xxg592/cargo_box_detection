@@ -1,8 +1,8 @@
 {
-  "image_path": "cargo_camera_after_turn.png",
-  "image_source": "cargo_camera_after_turn.png",
-  "image_width": 1920,
-  "image_height": 960,
+  "image_path": "images/cargo_red_blue_view.png",
+  "image_source": "images/cargo_red_blue_view.png",
+  "image_width": 640,
+  "image_height": 480,
   "coordinate_frame": "image_pixels",
   "status": "DETECTED",
   "detected_count": 2,
@@ -16,38 +16,38 @@
     {
       "color": "RED",
       "center": [
-        69,
+        291,
         131
       ],
       "size": [
-        138,
-        119
+        119,
+        120
       ],
       "bbox": [
-        0,
-        72,
-        138,
-        119
+        232,
+        71,
+        119,
+        120
       ],
-      "area": 14671.5
+      "area": 13493.0
     },
     {
       "color": "BLUE",
       "center": [
-        315,
+        471,
         132
       ],
       "size": [
-        160,
-        140
+        224,
+        233
       ],
       "bbox": [
-        235,
-        62,
-        160,
-        140
+        359,
+        16,
+        224,
+        233
       ],
-      "area": 20238.0
+      "area": 47614.5
     }
   ]
 }
