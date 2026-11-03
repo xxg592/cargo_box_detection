@@ -237,12 +237,11 @@ Measured with the detector as committed (commands in section 6).
 Annotated images: `results/*_detected.png`.
 Machine-readable results: `results/*_detection.json`.
 
-Live annotated stream: `/cargo_box/debug_image` was captured during a
-mission run as `results/demo_live_detection.png` (640x480, `bgr8`).
-Verified numerically against a simultaneous raw camera frame: 5553 pixels
-differ, of which 2909 are the exact red box outline and 3080 the exact green
-outline, while the raw frame contains none of those colours — i.e. the
-overlays really are drawn by the node.
+Live annotated stream: `results/demo_live_stream.png` was captured from
+`/cargo_box/debug_image` (640x480, `bgr8`). It holds 2969 pure-red and 3270
+pure-green outline pixels, while the rendered box materials are (177, 0, 0)
+and (0, 177, 0) — exact primary colours cannot occur in the scene, so those
+pixels are the rectangles drawn by the node.
 
 ---
 
