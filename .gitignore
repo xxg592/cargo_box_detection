@@ -1,0 +1,15 @@
+# Python / ROS build artefacts
+.venv/
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+__pycache__/
+*.pyc
+
+# local backups and logs
+.cargo_nav_backup_*/
+results/*.log
+
+# editor / OS noise
+.vscode/
+.DS_Store
