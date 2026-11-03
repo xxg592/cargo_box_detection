@@ -254,14 +254,14 @@ virtual pickup -> navigate -> virtual drop-off), `results/metrics_latest.json`:
 | Metric | Value |
 | --- | --- |
 | Mission result | `COMPLETED` |
-| Mission duration | 32.348 s |
-| Detection messages (processed frames) | 317 |
-| Frames with at least one detection | 157 |
-| Detection rate | 0.4953 (49.5 %) |
-| Total box observations | 224 |
-| Observations per colour | RED 137, GREEN 11, BLUE 76, YELLOW 0 |
-| Detection latency (mean / min / max) | 4.09 / 2.31 / 11.59 ms |
-| Mission state transitions | 5 (EXPLORING -> NAVIGATING_TO_BOX -> PICKING_UP -> NAVIGATING_TO_DROPOFF -> DROPPING_OFF -> COMPLETED) |
+| Mission duration | 32.742 s |
+| Detection messages (processed frames) | 326 |
+| Frames with at least one detection | 168 |
+| Detection rate | 0.5153 (51.5 %) |
+| Total box observations | 242 |
+| Observations per colour | RED 147, GREEN 20, BLUE 75, YELLOW 0 |
+| Detection latency (mean / min / max) | 4.93 / 3.29 / 9.83 ms |
+| Mission state transitions | 4 recorded (5 in total: `EXPLORING -> NAVIGATING_TO_BOX` can fire just before the metrics node subscribes) |
 
 Notes on interpretation:
 
@@ -273,6 +273,12 @@ Notes on interpretation:
   + annotation drawing) on a 640x480 image.
 * The mission metrics are only meaningful together with the mission result:
   `FAILED` runs still report detection counts.
+* One earlier run aborted because a burst of delayed scans made the costmap
+  message filter reject a scan ("timestamp earlier than all the data in the
+  transform cache") while the planner was re-planning. Both costmaps now use
+  `transform_tolerance: 1.0` and `expected_update_rate: 0.0`, and the run
+  above completed with zero `[ERROR]` lines. Under heavy host load the scan
+  rate still varies between ~3 and ~10 Hz, so this is worth watching.
 
 ---
 
