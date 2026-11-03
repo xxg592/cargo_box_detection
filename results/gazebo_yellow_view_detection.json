@@ -1,0 +1,53 @@
+{
+  "image_path": "images/gazebo_yellow_view.png",
+  "image_source": "images/gazebo_yellow_view.png",
+  "image_width": 640,
+  "image_height": 480,
+  "coordinate_frame": "image_pixels",
+  "status": "DETECTED",
+  "detected_count": 2,
+  "color_status": {
+    "RED": false,
+    "GREEN": true,
+    "BLUE": false,
+    "YELLOW": true
+  },
+  "detections": [
+    {
+      "color": "GREEN",
+      "center": [
+        595,
+        133
+      ],
+      "size": [
+        89,
+        188
+      ],
+      "bbox": [
+        551,
+        39,
+        89,
+        188
+      ],
+      "area": 14831.0
+    },
+    {
+      "color": "YELLOW",
+      "center": [
+        344,
+        191
+      ],
+      "size": [
+        450,
+        383
+      ],
+      "bbox": [
+        119,
+        0,
+        450,
+        383
+      ],
+      "area": 154206.5
+    }
+  ]
+}

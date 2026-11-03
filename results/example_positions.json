@@ -1,0 +1,62 @@
+{
+  "frame_id": "base_link",
+  "navigation_frame_id": "map",
+  "source_frame_id": "cargo_robot/base_link/front_depth_camera",
+  "cloud_age_s": 0.091,
+  "objects": [
+    {
+      "color": "RED",
+      "camera_xyz_m": [
+        3.5809,
+        -1.5244,
+        0.7105
+      ],
+      "distance_camera_m": 3.9562,
+      "base_link_xyz_m": [
+        3.8707,
+        -1.5244,
+        0.1449
+      ],
+      "distance_base_link_m": 4.1625,
+      "odom_xyz_m": [
+        3.7068,
+        -1.3398,
+        0.1449
+      ],
+      "distance_odom_m": 3.9441,
+      "map_xyz_m": [
+        -1.2068,
+        1.3397,
+        0.1449
+      ],
+      "distance_map_m": 1.8089
+    },
+    {
+      "color": "GREEN",
+      "camera_xyz_m": [
+        3.6628,
+        1.3214,
+        0.7202
+      ],
+      "distance_camera_m": 3.9599,
+      "base_link_xyz_m": [
+        3.9529,
+        1.3214,
+        0.1381
+      ],
+      "distance_base_link_m": 4.1702,
+      "odom_xyz_m": [
+        3.6281,
+        1.5061,
+        0.1381
+      ],
+      "distance_odom_m": 3.9307,
+      "map_xyz_m": [
+        -1.1281,
+        -1.5061,
+        0.1381
+      ],
+      "distance_map_m": 1.8868
+    }
+  ]
+}

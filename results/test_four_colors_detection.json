@@ -1,0 +1,89 @@
+{
+  "image_path": "images/test_four_colors.png",
+  "image_source": "images/test_four_colors.png",
+  "image_width": 1280,
+  "image_height": 720,
+  "coordinate_frame": "image_pixels",
+  "status": "DETECTED",
+  "detected_count": 4,
+  "color_status": {
+    "RED": true,
+    "GREEN": true,
+    "BLUE": true,
+    "YELLOW": true
+  },
+  "detections": [
+    {
+      "color": "RED",
+      "center": [
+        200,
+        360
+      ],
+      "size": [
+        275,
+        395
+      ],
+      "bbox": [
+        63,
+        163,
+        275,
+        395
+      ],
+      "area": 107956.0
+    },
+    {
+      "color": "GREEN",
+      "center": [
+        520,
+        360
+      ],
+      "size": [
+        275,
+        395
+      ],
+      "bbox": [
+        383,
+        163,
+        275,
+        395
+      ],
+      "area": 107956.0
+    },
+    {
+      "color": "BLUE",
+      "center": [
+        840,
+        360
+      ],
+      "size": [
+        275,
+        395
+      ],
+      "bbox": [
+        703,
+        163,
+        275,
+        395
+      ],
+      "area": 107956.0
+    },
+    {
+      "color": "YELLOW",
+      "center": [
+        1130,
+        360
+      ],
+      "size": [
+        215,
+        395
+      ],
+      "bbox": [
+        1023,
+        163,
+        215,
+        395
+      ],
+      "area": 84316.0
+    }
+  ]
+}
