@@ -43,7 +43,7 @@ def detect_boxes(image_input, source="camera"):
                 f"Cannot read image: {image_path}"
             )
 
-        source = str(image_path.resolve())
+        source = str(image_path)
 
     elif isinstance(image_input, np.ndarray):
 
@@ -159,7 +159,7 @@ def detect_boxes(image_input, source="camera"):
 
     result = {
         "image_path": (
-            str(image_path.resolve())
+            str(image_path)
             if image_path else None
         ),
         "image_source": source,
